@@ -5,7 +5,7 @@ import  json, sys
 
 # Função que faz a atribuicao dos parametros passado caso haja falha os programa é encerrado.
 def atribuicao():
-    if sys.argv[1] != ' ':
+    if sys.argv[1]:
         global ports
         ports = sys.argv[1].split(",")
     else:
